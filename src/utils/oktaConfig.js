@@ -1,7 +1,7 @@
 const config = {
-  issuer: process.env.REACT_APP_OKTA_ISSUER_URI,
+  issuer: 'https://auth.lambdalabs.dev/oauth2/default',
   redirectUri: window.location.origin + '/implicit/callback',
-  clientId: process.env.REACT_APP_CLIENT_ID,
+  clientId: '0oauwlyl5Xf6AvJxv4x6',
   pkce: true,
   scopes: ['openid', 'email', 'profile'],
 };
