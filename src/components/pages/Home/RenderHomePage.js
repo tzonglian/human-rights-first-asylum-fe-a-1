@@ -85,11 +85,7 @@ function RenderHomePage(props) {
     <div className={classes.container}>
       <SideDrawer logout={logout} userInfo={userInfo} />
 
-
-      
-
       <Route path="/">
-
         <CaseTable
           caseData={caseData}
           userInfo={userInfo}
@@ -119,8 +115,8 @@ function RenderHomePage(props) {
           notFullScreen={true}
           location={location}
           file={file}
-          pageWidth="700"
-          componentWidth="750px !important"
+          pageWidth={width * 0.2}
+          componentWidth="25%"
         />
       )}
     </div>

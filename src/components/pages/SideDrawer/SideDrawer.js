@@ -19,6 +19,8 @@ import CloseIcon from '@material-ui/icons/Close';
 import BookmarkPanel from '../Bookmarks/BookmarksQuickview';
 import BookmarksIcon from '@material-ui/icons/Bookmarks';
 
+import UploadCase from '../UploadCase/UploadCase';
+
 import { SideDrawerData } from './SideDrawerData';
 
 const drawerWidth = 300;
@@ -163,6 +165,7 @@ export default function SideDrawer(props) {
           </ListItem>
           {/* <BookmarkPanel /> */}
         </List>
+        <UploadCase />
       </Drawer>
       <main
         className={clsx(classes.content, {

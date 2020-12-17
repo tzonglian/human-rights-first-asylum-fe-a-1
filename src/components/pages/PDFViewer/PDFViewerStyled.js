@@ -20,17 +20,17 @@ export const PageControls = styled.div`
   align-items: center;
   background: white;
   position: ${props => (props.notFullScreen ? 'relative' : 'absolute')};
-  width: 200px;
+  width: 240px;
   height: 60px;
   left: ${props => {
     return !props.notFullScreen
       ? '50%'
       : props.pageWidth
-      ? `${props.pageWidth / 2 - 100}px`
-      : `${((8.5 / 11) * props.pageHeight) / 2 - 100}px`;
+      ? `${props.pageWidth / 2 - 120}px`
+      : `${((8.5 / 11) * props.pageHeight) / 2 - 120}px`;
   }};
   transform: ${props =>
-    props.notFullScreen ? 'none' : 'translate(-100px, -30px)'};
+    props.notFullScreen ? 'none' : 'translate(-120px, -30px)'};
   bottom: ${props => {
     return !props.notFullScreen
       ? '10%'
