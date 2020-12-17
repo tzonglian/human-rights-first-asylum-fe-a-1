@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
@@ -45,6 +45,8 @@ export default function FormDialog() {
       });
     }
   }
+
+  useEffect(() => {}, []);
 
   return (
     <div>
@@ -158,6 +160,64 @@ export default function FormDialog() {
                 onChange={handleChange}
                 name="hearing_location"
                 label="Hearing Location"
+                variant="outlined"
+              />
+            )}
+          />
+          <Autocomplete
+            id="hearing_type"
+            freeSolo
+            options={[]}
+            getOptionLabel={option => option}
+            style={{ width: 300 }}
+            renderInput={params => (
+              <TextField
+                {...params}
+                onChange={handleChange}
+                name="hearing_type"
+                label="Hearing Type"
+                variant="outlined"
+              />
+            )}
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="decision_date"
+            label="Decision Date"
+            type="date"
+            name="decision_date"
+            onChange={handleChange}
+            fullWidth
+          />
+          <Autocomplete
+            id="judge_decision"
+            freeSolo
+            options={[]}
+            getOptionLabel={option => option}
+            style={{ width: 300 }}
+            renderInput={params => (
+              <TextField
+                {...params}
+                onChange={handleChange}
+                name="judge_decision"
+                label="Judge Decision"
+                variant="outlined"
+              />
+            )}
+          />
+          <Autocomplete
+            id="refugee_origin"
+            freeSolo
+            options={[]}
+            getOptionLabel={option => option}
+            style={{ width: 300 }}
+            renderInput={params => (
+              <TextField
+                {...params}
+                onChange={handleChange}
+                name="refugee_origin"
+                label="Refugee Origin"
                 variant="outlined"
               />
             )}
