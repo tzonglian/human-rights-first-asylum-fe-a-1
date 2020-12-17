@@ -8,11 +8,13 @@ import {
   PageWrapper,
   ClosePDF,
 } from './PDFViewerStyled';
+import axios from 'axios';
 
 import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import CloseIcon from '@material-ui/icons/Close';
+import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const PDFViewer = props => {
@@ -38,6 +40,17 @@ const PDFViewer = props => {
         setPageNumber(pageNumber - 1);
       }
     }
+  }
+
+  function download(type) {
+    axios
+      .get(
+        `https://asylum-a-api.herokuapp.com/case/${location.pathname.match(
+          /(?<=pdfviewer\/)\d+/
+        )}/download-${type}`
+      )
+      .then(res => null)
+      .catch(err => alert('error with PDF download'));
   }
 
   function togglePDFView() {
@@ -128,6 +141,15 @@ const PDFViewer = props => {
             ) : (
               <OpenInNewIcon />
             )}
+          </PageButton>
+
+          <PageButton
+            onClick={event => {
+              event.preventDefault();
+              download('csv');
+            }}
+          >
+            <SystemUpdateAltIcon />
           </PageButton>
 
           <PageButton
