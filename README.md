@@ -1,3 +1,9 @@
+## Personal Deployment:
+Front-End: https://human-rights-first-asylum-fe.vercel.app/
+Back-End: https://hrf-asylum-api.herokuapp.com/
+
+If the deployment links stop working, it's because this was originally a school project that used the school's AWS and Okta resources.
+
 # Human Rights First - Asylum - Front End
 
 - This project is built with the Basic SPA Scaffold. To get started with the project, go [here](https://docs.labs.lambdaschool.com/labs-spa-starter/) and follow the instructions. Be sure to read the instructions carefully.   
