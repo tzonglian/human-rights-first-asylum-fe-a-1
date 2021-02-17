@@ -1,6 +1,6 @@
 # Human Rights First - Asylum - Front End
 
-- This project is built with the Basic SPA Scaffold. To get started with the project, go [here](https://docs.labs.lambdaschool.com/labs-spa-starter/) and follow the instructions. Be sure to read the instructions carefully. 
+- This project is built with the Basic SPA Scaffold. To get started with the project, go [here](https://docs.labs.lambdaschool.com/labs-spa-starter/) and follow the instructions. Be sure to read the instructions carefully.   
 - [Project deployed here](https://a.humanrightsfirstasylum.dev/), using AWS Amplify. </br>
 *In order for the website to work properly, please enable 3rd-party cookies in your browser settings!*
 - [Corresponding Back-end repository](https://github.com/Lambda-School-Labs/human-rights-first-asylum-be-a)
