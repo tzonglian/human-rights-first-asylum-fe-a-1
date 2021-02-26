@@ -1,5 +1,6 @@
 ## Personal Re-Deployment:
-Front-End: https://human-rights-first-asylum-fe.vercel.app/ - [Repo](https://github.com/tzonglian/human-rights-first-asylum-fe-a-1)<br>
+Front-End Deploy: https://a.humanrightsfirstasylum.dev/ (enable 3rd party cookies!)
+Back-up Front-End Deploy: https://human-rights-first-asylum-fe.vercel.app/ - [Repo](https://github.com/tzonglian/human-rights-first-asylum-fe-a-1)<br>
 Back-End: https://hrf-asylum-api.herokuapp.com/ - [Repo](https://github.com/tzonglian/human-rights-first-asylum-be-a)
 
 (If the deployment links stop working, it's because this was originally a school project that used the school's AWS and Okta resources.)
